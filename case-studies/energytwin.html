@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnergyTwin — EDITS</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="../assets/images/welt_logo.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <img src="../assets/images/welt_logo_transparent.png" alt="WEL-T">
+        <span>EDITS</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../workpackages.html">Work Packages</a></li>
+        <li><a href="../case-studies.html">Case Studies</a></li>
+        <li><a href="../events.html">Events</a></li>
+        <li><a href="../publications.html">Publications</a></li>
+        <li><a href="../videos.html">Videos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <p style="margin-bottom: 1rem;"><a href="../case-studies.html">&larr; All Case Studies</a></p>
+
+      <section class="hero" style="padding-bottom: 1rem; text-align: left;">
+        <span class="badge badge-wp6">WP6.3</span>
+        <h1>EnergyTwin</h1>
+        <p class="subtitle" style="margin: 0.5rem 0;">Months 19–48 &middot; Wind Farm Digital Twin</p>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Overview</h2>
+        </div>
+        <p>
+          EnergyTwin is a wind farm Digital Twin integrating real-time data from operational wind turbines
+          with physics-based and data-driven models. The system enables wind power forecasting,
+          predictive maintenance, and counterfactual analysis of failures.
+        </p>
+        <p>
+          Developed in collaboration with Universit&agrave; del Sannio (Italy), EnergyTwin uses the
+          ENET-RTLab simulation environment and applies the full EDITS methodology — from data
+          assimilation and surrogate learning to causal inference and multi-step-ahead forecasting.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Videos</h2>
+        </div>
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/YPTOF7Y_mCo" title="WEL-T VPP" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Virtual Power Plant</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">Demonstration of the Virtual Power Plant simulation and energy forecasting capabilities.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Presentations</h2>
+        </div>
+
+        <div class="pdf-viewer-container" id="pdf-natalia">
+          <div class="pdf-viewer-toolbar">
+            <span class="pdf-title">WEL-T Natalia — Energy Systems</span>
+            <div class="pdf-controls">
+              <button class="pdf-prev">&#9664; Prev</button>
+              <span class="page-info">Loading...</span>
+              <button class="pdf-next">Next &#9654;</button>
+              <button class="pdf-fullscreen">&#9974;</button>
+            </div>
+          </div>
+          <div class="pdf-canvas-wrapper"></div>
+        </div>
+
+        <div class="pdf-viewer-container" id="pdf-pcse">
+          <div class="pdf-viewer-toolbar">
+            <span class="pdf-title">PCSE — Crop Simulation</span>
+            <div class="pdf-controls">
+              <button class="pdf-prev">&#9664; Prev</button>
+              <span class="page-info">Loading...</span>
+              <button class="pdf-next">Next &#9654;</button>
+              <button class="pdf-fullscreen">&#9974;</button>
+            </div>
+          </div>
+          <div class="pdf-canvas-wrapper"></div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-logos">
+        <img src="../assets/images/ulb_logo_transparent.png" alt="ULB">
+        <img src="../assets/images/mlg_logo_transparent.png" alt="MLG">
+        <img src="../assets/images/welt_logo_transparent.png" alt="WEL-T">
+      </div>
+      <p>&copy; 2025&ndash;2029 EDITS &mdash; Machine Learning Group, ULB. Funded by F.R.S.-FNRS WEL-T Programme.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      PDFViewer.init('pdf-natalia', '../assets/presentations/WEL-T Natalia.pdf', 'WEL-T Natalia');
+      PDFViewer.init('pdf-pcse', '../assets/presentations/PCSE.pdf', 'PCSE');
+    });
+  </script>
+</body>
+</html>

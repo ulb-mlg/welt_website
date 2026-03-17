@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work Packages — EDITS</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/images/welt_logo.png">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/welt_logo_transparent.png" alt="WEL-T">
+        <span>EDITS</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="workpackages.html">Work Packages</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="videos.html">Videos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <section class="hero" style="padding-bottom: 1rem;">
+        <h1>Work Packages</h1>
+        <p class="subtitle">Six interconnected work packages spanning 48 months of research</p>
+      </section>
+
+      <!-- Gantt-style timeline -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Timeline Overview</h2>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.9rem;">
+          Months 1&ndash;48 (2025&ndash;2029). Hover over bars for details.
+        </p>
+        <div class="wp-timeline">
+          <div class="wp-bar-container">
+            <!-- M1-M48 scale markers -->
+            <div class="wp-bar-row" style="margin-bottom: 0.25rem;">
+              <div class="wp-bar-label"></div>
+              <div class="wp-bar-track" style="background: transparent; border: none; display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-muted);">
+                <span>M1</span><span>M12</span><span>M24</span><span>M36</span><span>M48</span>
+              </div>
+            </div>
+            <!-- WP1: M1-M48, 24MM -->
+            <div class="wp-bar-row">
+              <div class="wp-bar-label">WP1</div>
+              <div class="wp-bar-track">
+                <div class="wp-bar" style="left: 0%; width: 100%;" title="WP1: Big Data Infrastructure (M1-M48, 24MM)">M1–M48 · 24MM</div>
+              </div>
+            </div>
+            <!-- WP2: M1-M30, 27MM -->
+            <div class="wp-bar-row">
+              <div class="wp-bar-label">WP2</div>
+              <div class="wp-bar-track">
+                <div class="wp-bar" style="left: 0%; width: 62.5%;" title="WP2: Calibration (M1-M30, 27MM)">M1–M30 · 27MM</div>
+              </div>
+            </div>
+            <!-- WP3: M19-M30, 12MM -->
+            <div class="wp-bar-row">
+              <div class="wp-bar-label">WP3</div>
+              <div class="wp-bar-track">
+                <div class="wp-bar" style="left: 37.5%; width: 25%;" title="WP3: Foundation Models (M19-M30, 12MM)">M19–M30 · 12MM</div>
+              </div>
+            </div>
+            <!-- WP4: M13-M48, 24MM -->
+            <div class="wp-bar-row">
+              <div class="wp-bar-label">WP4</div>
+              <div class="wp-bar-track">
+                <div class="wp-bar" style="left: 25%; width: 75%;" title="WP4: Causal Discovery (M13-M48, 24MM)">M13–M48 · 24MM</div>
+              </div>
+            </div>
+            <!-- WP5: M13-M42, 24MM -->
+            <div class="wp-bar-row">
+              <div class="wp-bar-label">WP5</div>
+              <div class="wp-bar-track">
+                <div class="wp-bar" style="left: 25%; width: 62.5%;" title="WP5: Forecasting (M13-M42, 24MM)">M13–M42 · 24MM</div>
+              </div>
+            </div>
+            <!-- WP6: M1-M48, 36MM -->
+            <div class="wp-bar-row">
+              <div class="wp-bar-label">WP6</div>
+              <div class="wp-bar-track">
+                <div class="wp-bar" style="left: 0%; width: 100%;" title="WP6: Case Studies (M1-M48, 36MM)">M1–M48 · 36MM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WP Details -->
+      <section class="section">
+        <div class="section-header">
+          <h2>Work Package Details</h2>
+        </div>
+        <div class="card-grid" style="grid-template-columns: 1fr;">
+
+          <div class="card">
+            <span class="badge badge-wp1">WP1</span>
+            <h3>Big Data Infrastructure for System Monitoring</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Months 1–48 &middot; 24 Man-Months</p>
+            <p>
+              Design and implement a big data analytics infrastructure to support Digital Twin systems.
+              This includes data collection methodologies, high-performance computing setup, and data analysis
+              frameworks. The infrastructure adopts a Lambda architecture with speed, batch, and serving layers
+              for real-time and historical data processing, with message queuing for loose coupling between components.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-wp2">WP2</span>
+            <h3>Calibration of Physics-Based Models</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Months 1–30 &middot; 27 Man-Months</p>
+            <p>
+              Develop data assimilation techniques (Kalman filters, statistical methods) for calibrating
+              physics-based models with large variate data streams. This work package also covers surrogate
+              model learning through adaptive machine learning, integration of physics-based and data-driven models,
+              and multi-task machine learning approaches.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-wp3">WP3</span>
+            <h3>DT Foundational Models &amp; Transfer Learning</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Months 19–30 &middot; 12 Man-Months</p>
+            <p>
+              Define foundation models for Digital Twins and develop transfer learning approaches for model
+              adaptation. The goal is to enable knowledge reuse across similar physical systems, reducing the
+              need for full retraining when applying DT methodologies to new configurations.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-wp4">WP4</span>
+            <h3>Causal Discovery &amp; Inference</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Months 13–48 &middot; 24 Man-Months</p>
+            <p>
+              Infer causal models from multivariate data to add interpretability to surrogate models.
+              This includes counterfactual reasoning capabilities and validation of causal interventions,
+              enabling "what-if" scenario analysis and understanding of cause-effect relationships within
+              the Digital Twin.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-wp5">WP5</span>
+            <h3>Forecasting &amp; Simulation</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Months 13–42 &middot; 24 Man-Months</p>
+            <p>
+              Enable what-if scenario analysis through multi-variate multi-step-ahead forecasting with
+              uncertainty characterization. This work package focuses on visualization of scenario impacts
+              and robust prediction under various operating conditions.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-wp6">WP6</span>
+            <h3>Case Studies Validation</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Months 1–48 &middot; 36 Man-Months</p>
+            <p>
+              Validation through three progressively complex case studies:
+            </p>
+            <ul style="color: var(--text-muted); padding-left: 1.5rem; margin-top: 0.5rem; font-size: 0.95rem;">
+              <li><strong>WP6.1 (M1–M12):</strong> Small-scale IoT devices — Arduino-based robotic arm, wind turbine, smart farm mockup</li>
+              <li><strong>WP6.2 (M12–M36):</strong> TrafficTwin — mobility Digital Twin for smart cities with simulation, calibration, and 3D visualization</li>
+              <li><strong>WP6.3 (M19–M48):</strong> EnergyTwin — wind farm Digital Twin with real-time data, forecasting, and maintenance prediction</li>
+            </ul>
+            <a href="case-studies.html" class="card-link" style="margin-top: 1rem;">Explore case studies &rarr;</a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-logos">
+        <img src="assets/images/ulb_logo_transparent.png" alt="ULB">
+        <img src="assets/images/mlg_logo_transparent.png" alt="MLG">
+        <img src="assets/images/welt_logo_transparent.png" alt="WEL-T">
+      </div>
+      <p>&copy; 2025&ndash;2029 EDITS &mdash; Machine Learning Group, ULB. Funded by F.R.S.-FNRS WEL-T Programme.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

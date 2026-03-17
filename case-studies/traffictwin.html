@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrafficTwin — EDITS</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="../assets/images/welt_logo.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <img src="../assets/images/welt_logo_transparent.png" alt="WEL-T">
+        <span>EDITS</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../workpackages.html">Work Packages</a></li>
+        <li><a href="../case-studies.html">Case Studies</a></li>
+        <li><a href="../events.html">Events</a></li>
+        <li><a href="../publications.html">Publications</a></li>
+        <li><a href="../videos.html">Videos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <p style="margin-bottom: 1rem;"><a href="../case-studies.html">&larr; All Case Studies</a></p>
+
+      <section class="hero" style="padding-bottom: 1rem; text-align: left;">
+        <span class="badge badge-wp6">WP6.2</span>
+        <h1>TrafficTwin</h1>
+        <p class="subtitle" style="margin: 0.5rem 0;">Months 12–36 &middot; Mobility Digital Twin for Smart Cities</p>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Overview</h2>
+        </div>
+        <p>
+          TrafficTwin is a mobility Digital Twin for smart cities that integrates traffic simulation,
+          model calibration, multi-step-ahead forecasting, and 3D visualization. Using simulators like
+          SUMO and MatSim, TrafficTwin enables what-if scenario analysis for urban planning and
+          traffic management.
+        </p>
+        <p>
+          The system builds on related projects (TORRES, TULIPE, MOBIAID) and applies the EDITS
+          methodology — from data assimilation to causal reasoning — to understand and predict
+          urban mobility patterns.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Videos</h2>
+        </div>
+        <div class="video-grid">
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/UBHUI-Ex_RI" title="WEL-T Traffic Twin 01" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Traffic Twin — Demo 1</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">Traffic simulation and visualization demonstration.</p>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/huYnuteye-w" title="WEL-T Traffic Twin 02" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Traffic Twin — Demo 2</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">Extended traffic simulation with calibration results.</p>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-wrapper">
+              <iframe src="https://www.youtube.com/embed/qx25RpU_LOw" title="WEL-T Traffic Twin 03" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Traffic Twin — Demo 3</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">3D visualization and scenario analysis.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Presentations</h2>
+        </div>
+
+        <div class="pdf-viewer-container" id="pdf-eladio">
+          <div class="pdf-viewer-toolbar">
+            <span class="pdf-title">TrafficTwin — Eladio Montero-Porras</span>
+            <div class="pdf-controls">
+              <button class="pdf-prev">&#9664; Prev</button>
+              <span class="page-info">Loading...</span>
+              <button class="pdf-next">Next &#9654;</button>
+              <button class="pdf-fullscreen">&#9974;</button>
+            </div>
+          </div>
+          <div class="pdf-canvas-wrapper"></div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-logos">
+        <img src="../assets/images/ulb_logo_transparent.png" alt="ULB">
+        <img src="../assets/images/mlg_logo_transparent.png" alt="MLG">
+        <img src="../assets/images/welt_logo_transparent.png" alt="WEL-T">
+      </div>
+      <p>&copy; 2025&ndash;2029 EDITS &mdash; Machine Learning Group, ULB. Funded by F.R.S.-FNRS WEL-T Programme.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      PDFViewer.init('pdf-eladio', '../assets/presentations/valorisation_eladio.pdf', 'TrafficTwin - Eladio');
+    });
+  </script>
+</body>
+</html>
