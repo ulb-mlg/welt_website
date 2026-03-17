@@ -6,8 +6,6 @@
   <title>IoT Case Study — EDITS</title>
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="icon" href="../assets/images/welt_logo.png">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-  <script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';</script>
 </head>
 <body>
 
@@ -22,6 +20,7 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="../workpackages.html">Work Packages</a></li>
         <li><a href="../case-studies.html">Case Studies</a></li>
+        <li><a href="../valorisation.html">Valorisation</a></li>
         <li><a href="../events.html">Events</a></li>
         <li><a href="../publications.html">Publications</a></li>
         <li><a href="../videos.html">Videos</a></li>
@@ -45,67 +44,16 @@
           <h2>Overview</h2>
         </div>
         <p>
-          The IoT case study serves as the entry point for EDITS validation. Using small-scale,
-          controllable devices, the team develops and tests the core Digital Twin pipeline —
-          from data collection and physics-based model calibration to surrogate learning and forecasting
-          — before scaling to more complex urban and energy systems.
+          The IoT case study serves as the entry point for EDITS validation. Using a small-scale
+          smart farm plant setup with IoT sensors, the team develops and tests the core Digital Twin
+          pipeline — from data collection and physics-based model calibration to surrogate learning
+          and forecasting — in a controlled environment before scaling to more complex systems.
         </p>
-        <p>Three demonstrators are used:</p>
-        <ul style="padding-left: 1.5rem; color: var(--text-muted); margin-bottom: 1rem;">
-          <li><strong>Arduino-based robotic arm</strong> with EMG sensor control — demonstrating real-time DT interaction</li>
-          <li><strong>Small wind turbine mockup</strong> — for testing calibration and forecasting pipelines</li>
-          <li><strong>Smart farm setup</strong> — IoT sensor network for environmental monitoring</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <div class="section-header">
-          <h2>Videos</h2>
-        </div>
-        <div class="video-grid">
-          <div class="video-card">
-            <div class="video-wrapper">
-              <iframe src="https://www.youtube.com/embed/jMWz4Wgpy0s" title="WEL-T Robotic hand EMG" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-              <h3>Robotic Hand EMG Control</h3>
-              <p style="color: var(--text-muted); font-size: 0.9rem;">Demonstration of the Arduino-based robotic hand controlled via EMG sensors, showcasing real-time Digital Twin interaction.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-header">
-          <h2>Presentations</h2>
-        </div>
-
-        <div class="pdf-viewer-container" id="pdf-rehab">
-          <div class="pdf-viewer-toolbar">
-            <span class="pdf-title">WEL-T Robotics Rehabilitation</span>
-            <div class="pdf-controls">
-              <button class="pdf-prev">&#9664; Prev</button>
-              <span class="page-info">Loading...</span>
-              <button class="pdf-next">Next &#9654;</button>
-              <button class="pdf-fullscreen">&#9974;</button>
-            </div>
-          </div>
-          <div class="pdf-canvas-wrapper"></div>
-        </div>
-
-        <div class="pdf-viewer-container" id="pdf-isaac">
-          <div class="pdf-viewer-toolbar">
-            <span class="pdf-title">WELT DT Isaac Sim</span>
-            <div class="pdf-controls">
-              <button class="pdf-prev">&#9664; Prev</button>
-              <span class="page-info">Loading...</span>
-              <button class="pdf-next">Next &#9654;</button>
-              <button class="pdf-fullscreen">&#9974;</button>
-            </div>
-          </div>
-          <div class="pdf-canvas-wrapper"></div>
-        </div>
-
+        <p>
+          The smart farm mockup integrates environmental sensors (temperature, humidity, soil moisture,
+          light) with actuators, providing a complete IoT data pipeline that mirrors the challenges
+          of larger Digital Twin deployments at a manageable scale.
+        </p>
       </section>
 
     </div>
@@ -123,11 +71,5 @@
   </footer>
 
   <script src="../assets/js/main.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      PDFViewer.init('pdf-rehab', '../assets/presentations/WEL-T Robotics Rehabilitation.pdf', 'Robotics Rehabilitation');
-      PDFViewer.init('pdf-isaac', '../assets/presentations/WELT_DT_Isaac_291025.pdf', 'WELT DT Isaac');
-    });
-  </script>
 </body>
 </html>
